@@ -1,0 +1,121 @@
+p, b {
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 100%;
+    background-color: #212121;
+    margin: 0 auto;
+    z-index: auto;
+}
+
+.header  {
+    width: 100%;
+    height: 100vh;
+    background-image: url("background/bg_unicoder.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.header p {
+    font-size: 14px;
+    margin-left: 20px;
+}
+
+.header b {
+    font-size: 40px;
+    margin-left: 20px;
+}
+
+.header_text {
+    width: 100%;
+    height: 200px;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/*-----------------------------------------------------------------------------------------*/
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container b {
+    color: #FF9900;
+    font-size: 20px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    margin-top: 25%;
+}
+
+.item_content {
+    height: 50%;
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.item {
+    flex-shrink: 0;
+    width: 100%;
+    scroll-snap-align: start;
+    scroll-snap-align: center;
+}
+
+.item p {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 50%;
+    font-size: 32px;
+}
+
+.item:nth-child(1){
+    order: 1;
+    width: 100%; height: 100%;
+    background-image: url("img/content_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item:nth-child(2){
+    order: 2;
+    width: 100%; height: 100%;
+    background-image: url("img/content_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item:nth-child(3){
+    order: 3;
+    width: 100%; height: 100%;
+    background-image: url("img/content_3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#mail {
+    background-color: #3E3E3E;
+}
+
+#mail p {
+    color: #fff;
+    font-size: 10px;
+    margin-left: 20px;
+}
